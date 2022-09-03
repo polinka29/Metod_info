@@ -12,7 +12,22 @@ for (int i = 0; i < myarray.GetLength(0); i++)
     Console.WriteLine();
 }
 
-// Для вывода на печать еще раз типо дубля этот метод:
+// Этот метод создает новый массив, т.е массив в массиве, он должен быть выше PrintArray
+void Newarray(int[,] array)
+{
+for(int i = 0;i < m;i++)
+{
+    for(int j = 0;j < n;j++)
+    {
+    array[i, j] = new Random().Next(10);
+    }
+}
+    return;
+}
+Newarray(myarray);
+
+// Этот метод выводит на печать массив,если выше использовать 
+//метод нового массива,то выведет новый,если без метода.то повторит сам массив на печать
 void PrintArray(int[,] array)
 {
 for(int i = 0;i < m;i++)
@@ -27,3 +42,5 @@ for(int i = 0;i < m;i++)
 }
 Console.WriteLine();
 PrintArray(myarray);
+
+
