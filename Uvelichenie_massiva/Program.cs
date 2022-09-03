@@ -23,4 +23,3 @@ for(int i = 0;i < m;i++)
 Console.WriteLine();
 MaxToMinArray(myarray);
 PrintArray(myarray);
-//конец
